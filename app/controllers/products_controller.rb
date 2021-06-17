@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
   end
 
   def all_products
-    input = params["product"]
     product = Product.all
     render json: product.as_json
   end
